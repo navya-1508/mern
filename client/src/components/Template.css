@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+  
+}
 .main{
     color:white;
     font-size: 40px;
@@ -252,8 +257,83 @@ width:100px;
   }
   #rooms{
     height:100vh;
+   padding-top: 150px;
+  .cards{
+    display: flex;
+    /* background-color: rgb(67, 122, 170); */
+    height:50vh;
+    margin-left: 200px;
+    margin-right: 200px;
+    /* margin-top: 100px; */
 
+    .card1{
+       background-color:rgb(114, 114, 119); 
+      height:50vh;
+      width:33.3%;
+      margin-right: 20px;
+      &:hover{
+        transform: scale(1.1);
+      }
+      .single-bed{
+        height: 30vh;
+        width:90%;
+        margin-left: 12px;
+        margin-top: 15px;
+      }
+      button{
+        margin-left: 90px;
+        margin-top: 30px;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+    .card2{
+      height:50vh;
+      background-color: rgb(114, 114, 119);;
+      width:33.3%;
+      margin-right: 20px;
+      &:hover{
+        transform: scale(1.1);
+      }
+      .double-bed{
+        height: 30vh;
+        width:90%;
+        margin-left: 12px;
+        margin-top: 15px;
+      }
+      button{
+        margin-left: 90px;
+        margin-top: 30px;
+        padding:10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+    .card3{
+      height:50vh;
+      background-color:rgb(114, 114, 119);;
+      width:33.3%;
+      &:hover{
+        transform: scale(1.1);
+      }
+      .family-bed{
+        height: 30vh;
+        width:90%;
+        margin-left: 12px;
+        margin-top: 15px;
+      }
+      button{
+        margin-left: 90px;
+        margin-top: 30px;
+        padding: 10px;
+        border-radius: 5px;
+      cursor: pointer;
+      }
+    }
   }
+}
+
 .shs-swiper-module{
   height:80vh;
   margin-top: 100px;
@@ -263,7 +343,7 @@ width:100px;
    padding-top: 10px;
     .abth1{
       color:white;
-      padding-left: 400px;
+      padding-left: 350px;
       font-size: 40px;
       margin-top: 100px;
       span{
@@ -361,55 +441,122 @@ width:100px;
     }
   }
   #team{
+    h1{
+      text-align: center;
+      color: white;
+    }
     height:100vh;
-    padding-top: 60px;
-    .navya{
-      height:20vh;
-      margin-right: 40px;
-      &:hover{
-        opacity:0.5;
-        cursor: pointer;
+    padding-top: 70px;
+    }
+
+    #team{
+      .team-one{
+        /* background-color: aquamarine; */
+        width: 90%;
+        display: flex;
+        margin-left: 70px;
+        padding-right: 50px;
+        height: 70vh;
+        color:white;
+      .pooji{
+        /* background-color: rgb(255, 255, 0); */
+        width: 33.33%;
+        height: 70vh;
+        margin-right: 10px;
+        .pooji-img{
+          height: 25vh;
+          margin-left: 100px;
+          margin-top: 30px;
+          margin-bottom: 50px;
+        }
+        .abt{
+          margin-left: 35px;
+        }
+        &:hover{
+          cursor: pointer;
+        }
+        .accounts{
+          display: flex;
+          margin-left: 32px;
+          .insta{
+            height: 5vh;
+            margin-right: 15px;
+          }
+          .linkedin{
+            height: 5vh;
+            margin-right: 15px;
+          }
+          .github{
+            height:5vh;
+          }
+        }
+      }
+      .navya{
+        /* background-color: bisque; */
+        width: 33.33%;
+        height: 70vh;
+        margin-right: 10px;
+        .navya-img{
+          height: 25vh;
+          margin-left: 100px;
+          margin-top: 30px;
+        }
+        .abt{
+          margin-left: 35px;
+        }
+        &:hover{
+          cursor: pointer;
+        }
+        .accounts{
+          display: flex;
+          margin-left: 32px;
+          .insta{
+            height: 5vh;
+            margin-right: 15px;
+          }
+          .linkedin{
+            height: 5vh;
+            margin-right: 15px;
+          }
+          .github{
+            height:5vh;
+          }
+        }
+      }
+
+      .malli{
+        /* background-color: blanchedalmond; */
+        width: 33.33%;
+        height: 70vh;
+        margin-right: 10px;
+        .malli-img{
+          height:25vh;
+          margin-left: 100px;
+          margin-top: 30px;
+        }
+        .abt{
+          margin-left: 35px;
+        }
+        &:hover{
+          cursor: pointer;
+        }
+        .accounts{
+          display: flex;
+          margin-left: 32px;
+          .insta{
+            height: 5vh;
+            margin-right: 15px;
+          }
+          .linkedin{
+            height: 5vh;
+            margin-right: 15px;
+          }
+          .github{
+            height:5vh;
+          }
+        }
       }
     }
-    .poojitha{
-      height:20vh;
-      margin-right: 40px;
-      margin-left: 350px;
-      &:hover{
-        opacity:0.5;
-        cursor: pointer;
-      }
-    }
-    .pooji{
-color:white;
-    }
-    .poojitha-card{
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        padding: 20px;
-        width: 300px;
-        margin: 0 auto;
-        margin-top: 50px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        color: white;
-      }
-    
-      .poojitha-card h2 {
-        margin-top: 0;
-        font-size: 1.5rem;
-      }
-    
-      .poojitha-card p {
-        margin: 10px 0;
-        font-size: 1.1rem;
-      }
-    }
-    .malleeswari{
-      height:20vh;
-      &:hover{
-        opacity:0.5;
-        cursor: pointer;
-      }
     }
 
 

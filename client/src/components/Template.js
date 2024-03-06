@@ -10,18 +10,25 @@ import backtotop from '../Assests/backtotop.png'
 import navya from '../Assests/navya.png'
 import malleeswari from '../Assests/malleeswari.png'
 import poojitha from '../Assests/poojitha.png'
+import insta from '../Assests/insta.webp'
+import linkedin from '../Assests/linkedin.png'
+import github from '../Assests/github.png'
 //  import img1 from '../Assests/img1.jpeg'
 import wifi from '../Assests/wifi.gif'
 import service from '../Assests/service.gif'
 import balcony from '../Assests/balcony.png'
 import bedroom from '../Assests/bedroom.gif'
-import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export default function Template() {
+
+const handle=()=>{
+  window.location.href='/Book'
+}
   const [showDropdown, setShowDropdown] = useState(false);
 
   const toggleDropdown = () => {
@@ -121,7 +128,7 @@ export default function Template() {
         ROOMS
       </ScrollLink>
     </li>
-    <li><Link to="/book">BOOK</Link></li>
+    <li><Link to="/Book">BOOK</Link></li>
     <li className="user-profile" onClick={toggleDropdown}>
       <a href="#"><img className="user" src={user} alt="Logo"/></a>
       {showDropdown && (
@@ -167,7 +174,7 @@ export default function Template() {
         ROOMS
       </ScrollLink>
     </li>
-    <li><Link to="/book">BOOK</Link></li>
+    <li><Link to="/Book">BOOK</Link></li>
     <li className="user-profile" onClick={toggleDropdown}>
       <a href="#"><img className="user" src={user} alt="Logo"/></a>
       {showDropdown && (
@@ -192,7 +199,7 @@ export default function Template() {
     
     </div>
     <div id="about">
-      <h5 className='abth1'>AbOuT PaRaDiSe CoVe</h5>
+      <h5 className='abth1'>ABOUT<span></span> PARADISE<span></span> COVE</h5>
       {/* <br></br><span>E</span><span>X</span><span>P</span><span>I</span><span>E</span><span>R</span><span>E</span><span>N</span><span>C</span><span>E</span><span>&nbsp;</span><span>A</span><span>&nbsp;</span><span>G</span><span>O</span><span>O</span><span>D</span><span>&nbsp;</span><span>S</span><span>T</span><span>A</span><span>Y</span><span>&nbsp;</span><span>&</span><span>&nbsp;</span><span>E</span><span>N</span><span>J</span><span>O</span><span>Y</span></h5> */}
        {/* <h6 className='abth2'><span>E</span><span>X</span><span>P</span><span>I</span><span>E</span><span>R</span><span>E</span><span>N</span><span>C</span><span>E</span><span>A</span><span>G</span><span>O</span><span>O</span><span>D</span><span>S</span><span>T</span><span>A</span><span>Y</span><span>&</span><span>E</span><span>N</span><span>J</span><span>O</span><span>Y</span></h6>  */}
       <div className='one'>
@@ -217,44 +224,51 @@ export default function Template() {
     
     </div>
     <div id="team">
-      <img src={poojitha} alt="Poojitha" className='poojitha' onClick={toggleDropdown}/>
-      {/* {showDropdown && (
-        <p className='pooji'>This is Poojitha kotipalli</p>
-      )} */}
-      <img src={navya} alt="Navya" className='navya' onClick={toggleDropdown1}/>
-      {/* {showDropdown1 && (
-        <p className='pooji'>This is navya videla</p>
-      )} */}
-      <img src={malleeswari} alt="Malleeswari" className='malleeswari' onClick={toggleDropdown2}/>
-      {/* {showDropdown2 && (
-        <p className='pooji'>This is kola malleeswari</p>
-      )} */}
-      {showDropdown && (
-        <>
-        <div className="poojitha-card">
-        <h2>Name: kotipalli Poojitha</h2>
-        <p>Role: Planner & Designer</p>
+      <h1>Our Team</h1>
+
+      <div className='team-one'>
+        <div className='pooji'>
+        <img src={poojitha} alt="Pooji-img" className='pooji-img' onClick={toggleDropdown}/>
+        <div className='abt'>
+        <h2>Name: Kotipalli Poojitha</h2>
+        <p>Role: Front End Developer</p>
          <p>ID No:2200030088</p>
-       </div></>
-      )}
-      {showDropdown1 && (
-         <>
-         <div className="poojitha-card">
-         <h2>Name: Videla Navya</h2>
-         <p>Role: Front end developer</p>
-          <p>ID No: 2200030540</p>
-        </div></>
-      )}
-      {showDropdown2 && (
-         <>
-         <div className="poojitha-card">
-         <h2>Name: Kola Naga Malleeswari</h2>
-         <p>Role:Designer & Backend</p>
-          <p>ID No:2200030350</p>
-        </div></>
-      )}
-  
-   
+         </div>
+         <div className='accounts'>
+          <img src={insta} alt="Instagram" className='insta'/>
+          <img src={linkedin} alt="Linkedin" className='linkedin'/>
+          <img src={github} alt="Github" className='github'/>
+        </div>
+        </div>
+
+        <div className='navya'>
+        <img src={navya} alt="Navya-img" className='navya-img' onClick={toggleDropdown1}/>
+        <div className='abt'>
+        <h2>Name : Videla Navya</h2>
+         <p>Role : Backend Developer</p>
+          <p>ID No : 2200030540</p>
+          </div>
+          <div className='accounts'>
+          <img src={insta} alt="Instagram" className='insta'/>
+          <img src={linkedin} alt="Linkedin" className='linkedin'/>
+          <img src={github} alt="Github" className='github'/>
+        </div>
+        </div>
+
+        <div className='malli'>
+      <img src={malleeswari} alt="Malli-img" className='malli-img' onClick={toggleDropdown2}/> 
+      <div className='abt'>
+      <h2>Name : Kola Naga Malleeswari</h2>
+         <p>Role : Middleware Designer</p>
+          <p>ID No : 2200030350</p>
+          </div>
+        <div className='accounts'>
+          <img src={insta} alt="Instagram" className='insta'/>
+          <img src={linkedin} alt="Linkedin" className='linkedin'/>
+          <img src={github} alt="Github" className='github'/>
+        </div>
+      </div>
+    </div>
     </div>
 
    
@@ -290,7 +304,23 @@ export default function Template() {
 </div>
 </div>
 <div id="rooms">
-<Swiper
+  <div className='cards'>
+    <div className='card1'>
+    <img src={'https://media.istockphoto.com/id/496859731/photo/modern-twin-room-interior.jpg?s=612x612&w=0&k=20&c=ZYrOwKJbbm-15fq0kxpCwlO0Lvg_OQhOyctsWgfonWw='} alt="Single bed" className='single-bed'/>
+    <button onClick={handle}>Book Now</button>
+    </div>
+    <div className='card2'>
+    <img src={'https://media.istockphoto.com/id/1453121684/photo/modern-hotel-room-with-double-bed-night-tables-and-day-sofa-bed.jpg?s=612x612&w=0&k=20&c=zIw8iR0vtQa19VQlrohzQEt7x-izuwP6JBjJY_68--8='} alt="Double bed" className='double-bed'/>
+    <button onClick={handle}>Book Now</button>
+    </div>
+    <div className='card3'>
+    <img src={'https://media.istockphoto.com/id/185083188/photo/luxury-shangri-la-hotel-room.jpg?s=612x612&w=0&k=20&c=5O6xdH0CYU008xoBbySJ81pKaNlvaRki5CFcM2orcBQ='} alt="family bed" className='family-bed'/>
+    <button onClick={handle}>Book Now</button>
+    </div>
+
+  </div>
+
+{/* <Swiper
       spaceBetween={0}
       centeredSlides={true}
       autoplay={{
@@ -327,11 +357,10 @@ export default function Template() {
           <img src={'https://images.luxuryescapes.com/q_auto:eco/zl13bxz82id6jtvcfve'} alt="" />
         </div>
       </SwiperSlide>
-
-      {/* Navigation Controls */}
       <div className="swiper-button-next"></div>
       <div className="swiper-button-prev"></div>
-</Swiper>
+</Swiper> */}
+
 
     </div>
 {/* <div id="reserve">
@@ -345,5 +374,5 @@ export default function Template() {
 </div>
 </div>
 
-  )
-}
+  );
+};

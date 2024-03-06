@@ -1,0 +1,8 @@
+.home{
+    height: 100vh;
+}
+
+#home-wall{
+    background-size: cover;
+    height:100vh;
+}
